@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Sample</title>
+</head>
+
+<body>
+
+
+    <header>
+        <h1>How to take care of dogs?</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Tip for hot weather</h2>
+            <p>Make sure your pet has plenty of <b><i>fresh water</i> during hot weather.</b>
+                <img src="img/husky.jpg" alt="Husky">
+            </p>
+        </article>
+
+        <article>
+            <h2>How to feed your dog</h2>
+            <table border="2">
+                <tbody>
+                    <tr>
+                        <th colspan="4">Feeding</th>
+                    </tr>
+
+                    <tr>
+                        <th>#</th>
+                        <th>Meal</th>
+                        <th>Time</th>
+                        <th rowspan="4">Schedule</th>
+
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Breakfast</td>
+                        <td>9:00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dinner</td>
+                        <td>15:00</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Supper</td>
+                        <td>20:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+        
+        <article>
+            <h2>Favourite meals </h2>
+            <ul type="square">
+                <li>Olives</li>
+                <li>Meat</li>
+            </ul>
+        </article>
+        
+        <article>
+            <h2>Favourite places</h2>
+            <ol type="I">
+              <li>Sofa</li>
+              <li>Bed</li>
+            </ol>
+        </article>
+        
+        <article>
+            <h2>Contact me</h2>
+            <form method="POST" action="https://formspree.io/yaroslavfedyna@gmail.com">
+                
+                <label>Client name: 
+                <input type="text" name="client-name"/>
+                </label>
+                
+                <br>
+                <br>
+                <label for="client-email"> Client email: </label>
+                <input type="email" name="client-email" id="client-email">
+                
+                <br> <br>
+                <label>
+                    Car plate number: 
+                    <input type="text" name="car-plate" required pattern="[A-Z]{2}[\d]{4}[A-Z]{2}"
+                    placeholder="AA1234BB"
+                    title="AA1234BB">
+                    
+                </label>
+                
+                <br><br>
+                <label>
+                    Comments: 
+                    <textarea name="Comments"></textarea>
+                </label>
+                
+                <br><br>
+                <label>
+                    <input type="radio" name="Genger" value="Male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="Genger" value="Female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="Genger" value="Other"> Other
+                </label>
+                
+                
+               <br>
+               <br>
+                <input type="submit">
+                
+            </form>
+        </article>
+        
+    </main>
+
+    <footer>
+        <p><i>Copyrigh Dogs</i></p>
+    </footer>
+</body>
+
+</html>
